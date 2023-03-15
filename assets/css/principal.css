@@ -1,0 +1,207 @@
+body{
+   background-color: #000000;
+   background-size: cover;
+   background-repeat: no-repeat;
+ }
+div{
+  display: flex;
+}
+button{
+  height:45px;
+  width: 113px;
+}
+
+.accordion-body{
+  height: 155px;
+}
+
+#fon{
+  background-color: #ffffff;
+  color: black;
+  width: 140px;
+}
+#encabezado{
+  background-color: antiquewhite;
+}
+
+/*FONDOS*/
+
+#diseño1{
+  font-family: 'Buda';
+  font-size: 20px;
+  color: white;
+  border:none;
+  border-radius:3px;
+  background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/e1d55f03-64d8-4d5e-9a13-9943ea4e5c91/dckxpmf-146c4467-a658-46ab-a455-fc6729566360.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2UxZDU1ZjAzLTY0ZDgtNGQ1ZS05YTEzLTk5NDNlYTRlNWM5MVwvZGNreHBtZi0xNDZjNDQ2Ny1hNjU4LTQ2YWItYTQ1NS1mYzY3Mjk1NjYzNjAucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.pfsRzY2FLum74z4q_n8tCXVBkYIeIdFAvDUSMcsscnI');
+  box-shadow: 5px 7px #888;
+  background-size:cover;
+  background-repeat: no-repeat; margin: 10px;
+}
+#diseño2{
+  font-family: 'Buda';
+  font-size: 20px;
+  color: #696969;
+  border:none;
+  border-radius:3px;
+  box-shadow: 5px 5px 5px 2px #888;
+  background-image: url('https://pm1.narvii.com/6214/37c37b37800b7ff539e2d14e69507d538ec61384_hq.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;  margin: 10px;
+  
+}
+#diseño3{
+  font-family:'Buda' ;
+  font-size: 20px;
+  color: white;
+  border:none;
+  border-radius:3px;
+  background-image: url('https://fondosmil.com/fondo/2578.jpg');
+  box-shadow: 0 09px 5px -4px #777;
+  background-size: cover;
+  background-repeat: no-repeat;  margin: 10px;
+}
+#diseño4{
+  font-family:'Buda' ;
+  font-size: 20px;
+  color: white;
+  border:none;
+  border-radius:3px;
+  background-image: url('amanecer.jpg');
+  -webkit-box-shadow:0 0px 4px #777, 0 0 20px #CCC inset; 
+   -moz-box-shadow:0 0px 4px #777, 0 0 20px #CCC inset;
+  box-shadow:0 0px 4px #777, 0 0 20px #777 inset;
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;  margin: 10px;
+}
+#diseño5{
+  font-family:'Buda' ;
+  font-size: 20px;
+  color: white;
+  border:none;
+  border-radius:3px;
+  background-image: url('https://i.imgur.com/QmHEeCn.png');
+  box-shadow: 0 10px 5px -4px #777;
+  background-size: cover;
+  background-repeat: no-repeat;  margin: 10px;
+}
+#diseño6{
+  font-family:'Buda' ;
+  font-size: 20px;
+  color: white;
+  border:none;
+  border-radius:3px;
+  background-image: url('https://i.pinimg.com/originals/9c/4c/e6/9c4ce6da1db60a7fa1e91961a9cb266e.gif');
+  box-shadow: 0 10px 5px -4px #777;
+  background-size: cover;
+  background-repeat: no-repeat;  margin: 10px;
+}
+#diseño7{
+  font-family: 'Buda';
+  font-size: 20px;
+  color: white;
+  border:none;
+  border-radius:3px;
+  background-image: url('https://cutewallpaper.org/26/beach-wallpaper-steven-universe/steven-universe-beach-city-alone-together-3d-model-by-gabrielgt16-gabrielgt16-32e248e.png');
+  box-shadow: 0 10px 5px -4px #777;
+  background-size: cover;
+  background-repeat: no-repeat;  margin: 10px;
+}
+.fila2{
+  position: absolute;
+  top: 40px;
+  margin-top: 100px;
+}
+
+#myselection{
+  width: 55px; height: 25px; 
+  margin-bottom: 15px;
+  border: 2px solid  rgb(203, 203, 210) ;
+ background-position: center;
+padding-bottom: 2px;
+  box-shadow: 0px 0px 8px rgb(181, 182, 232);
+font-size: 15px
+}
+
+/*COLORES SÓLIDOS*/
+
+#color1{
+  background-color:#BAC8CE;
+}
+#color2{
+  background-color: #C9D4D9;
+}
+#color3{
+  background-color:#E7ECEE ;
+}
+#color4{
+  background-color:#EEDAE5 ;
+}
+#color5{
+  background-color:#DFCFC8 ;
+}
+#color6{
+ background-color:#E8DDD8 ;
+}
+#color7{
+  background-color: #F2EAE6;
+}
+#color8{
+  background-color: #F2EFEA;
+}
+#tarjetaModal{
+  background-color: #a2b98f
+}
+.btn{
+transform: translate(1230%,-80%);
+}
+
+/*INICIO DE SESIÓN*/
+
+.titulo{
+  transform: translate(90%,20%);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: black ;
+}
+
+.modal-body{
+  background-color: #E8F0FA;
+  background-size: 100px 50px;
+}
+.modal-header{
+  background-color: #FEFBE9;
+}
+
+.rrss{
+  transform: translate(10%,180%);
+}
+
+.log-in{
+  transform: translate(40%,20%);
+  background-color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  border: solid 2px;
+}
+
+.log-in:hover{
+  background-color:white;
+  color: black;
+}
+
+#login-form{
+  transform: translate(50%,10%);
+  position: absolute;
+  /*transform: translate(60%,1%);*/
+}
+.input-login{
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  color:black;
+  display: block;
+  background-color: #DBE4C6 ;
+  border: inset black;
+  border-radius: 12px;
+  padding:  5px 6px;
+  margin-bottom: 15px;
+}
