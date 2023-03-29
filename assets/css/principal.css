@@ -339,7 +339,6 @@ transform: translate(1275%,-120%);
 .log-in:active {
   color: white;
   border:2px black;
- /* background-color: #7882A4;*/
   background: linear-gradient(black, #9198e5);
   box-shadow: 0 10px black;
 }
@@ -410,7 +409,6 @@ transform: translate(1275%,-120%);
 .sign-up:active {
   color: white;
   border:2px black;
- /* background-color: #7882A4;*/
   background: linear-gradient(black, #9198e5);
   box-shadow: 0 10px black;
 }
@@ -487,30 +485,59 @@ transform: translate(1275%,-120%);
 
 /*COMENTA CARD*/
 .titulocard{
-   transform:translate(100%,20%);
+  transform:translate(100%,20%);
   font-family:'Anaheim' ;
   font-weight: 800;
 }
 .card{
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  justify-content: center;
- color:black;
-  font-family: 'Alegreya Sans';
- }
-.boton-card{
   transform:translate(30%,20%);
+  display: block;
+  flex-direction: column;
+  color:black;
+  font-family: 'Alegreya Sans';
+  font-size: 20px;
+  box-shadow: -3px -3px 7px #fff, 
+  3px 3px 5px rgb(94,104,121,0.7);
+ }
+.modal-bodyy{
+  background-image: url(https://i.pinimg.com/564x/a5/b8/7d/a5b87dd11e0fa46179a0ee48514cadd3.jpg);
+  background-size: cover;
+}
+.input-card{ 
+ background-color: #EBEBEB;
+ box-shadow: inset 4px 4px 10px -1px rgba(0, 0, 0, 0.15);
+ border: none;
+ text-align: center;
+ font-family:'Alegreya Sans' ;
+ margin: 10px;
+ height: 30px;
+ border-radius: 5px;
+  /*box-shadow: inset 2px 2px 5px #BABECC, inset -5px -5px 10px #FFF;*/
+}
+.input-card2{
+ background-color: #EBEBEB;
+ box-shadow: inset 4px 4px 10px -1px rgba(0, 0, 0, 0.15);
+ border: none;
+ text-align: center;
+ font-family:'Alegreya Sans' ;
+ margin: 10px;
+ height: 170px;
+ border-radius: 5px;
+}
+
+.boton-card{
+  transform:translate(5%,20%);
   background: antiquewhite;
-  font-family: 'Cormorant SC';
+  font-family: 'Carme';
   font-weight: 800;
-  font-size: 19.5px;
+  font-size: 18.5px;
   color: black;
   border: none;
   width: 278px;
   height: 47px;
   border-radius: 5px;
   box-shadow: 0 9px gray;
+  margin: 10px;
 }
 .boton-card:active {
   color: white;
@@ -588,7 +615,7 @@ transform: translate(1275%,-120%);
 
 #botonfon{
   transform:translate(10%,40%);
-  background-color: #EBEBEB;;
+  background-color: #EBEBEB;
   font-family:'Ruluko';
   color: black;
   text-align: center;
