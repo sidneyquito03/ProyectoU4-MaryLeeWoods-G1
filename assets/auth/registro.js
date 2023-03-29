@@ -16,17 +16,17 @@ signUpForm.addEventListener("submit", async (e) => {
     signUpForm.reset();
 
     // show welcome message
-    toast("Welcome " + usuario);
+    toast("¡Bienvenido!, nos alegra que te hayas unido, " + usuario);
 
   } catch (error) {
     if (error.code === 'auth/email-already-in-use') {
-      toast("Email en uso", "error")
+      toast("Este email ya ha sido registrado anteriormente", "error")
     } else if (error.code === 'auth/invalid-email') {
-      toast("Invalido email", "error")
+      toast("Email inválido, pruebe con otro", "error")
     } else if (error.code === 'auth/weak-password') {
-      toast("Password corto", "error")
+      toast("Su contraseña es corta (6 dígitos o +) ", "error")
     } else if (error.code) {
-      toast("Algo salio mal", "error")
+      toast("Algo ha salido mal", "error")
     }
   }
 

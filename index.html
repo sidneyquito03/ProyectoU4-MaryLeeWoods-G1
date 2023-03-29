@@ -11,30 +11,50 @@
   <link href='https://fonts.googleapis.com/css?family=Cinzel' rel='stylesheet'>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link href='https://fonts.googleapis.com/css?family=Playfair Display SC' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Rajdhani' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Ruluko' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Cinzel' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Cormorant SC' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Caudex' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Glegoo' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Antic Slab' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Baskervville' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Cormorant Upright' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Encode Sans' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Alegreya Sans' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Anaheim' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Aref Ruqaa' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Convergence' rel='stylesheet'>
+  
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
-  <title>Document</title>
+  <!--Boxicons-->
+  <!--<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>-->
+  <title>Tell me your Secret</title>
 </head>
-
-<body>
+<body class="bodycolor">
   <!-- Encabezado -->
-  <nav class="navbar navbar-expand-lg  text-dark navbar-dark" id="encabezado">
+  <nav class="navbar navbar-expand-lg navbar-dark" id="encabezado">
     <div class="container">
       <a href=""><img src="assets/img/logoM.png" height="100px" alt=""></a>
-      <a class="navbar-brand text-dark display-1" href="/">Red Social G1
+      <a class="navbar-brand text-white display-1" href="/"> Tell me your secret
       </a>
+      <!--Le dan diseño al título o lo agregan como imagen-->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
         aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav ms-auto">
-          <a class="nav-link logged-out text-dark" href="#" data-bs-toggle="modal" data-bs-target="#signinModal">Iniciar
+          <a class="nav-link logged-out text-white" href="#" data-bs-toggle="modal" data-bs-target="#signinModal"><i
+              class="fa fa-sign-in"></i> Iniciar
             Sesión</a>
-          <a class="nav-link logged-out text-dark" href="#" data-bs-toggle="modal"
+          <a class="nav-link logged-out text-white" href="#" data-bs-toggle="modal"
             data-bs-target="#signupModal">Regístrate</a>
-          <a class="nav-link logged-in text-dark" href="#" data-bs-toggle="modal" data-bs-target="#tarjetaModal"
-            id="tarjeta">Escribe</a>
-          <a class="nav-link logged-in text-dark" href="#" id="logout">Cerrar Sesión</a>
+          <span> <a class="nav-link logged-in text-white" href="#" data-bs-toggle="modal" data-bs-target="#tarjetaModal"
+              id="tarjeta"><i class='far fa-paper-plane'></i> Tu secreto </a></span>
+          <a class="nav-link logged-in text-white" href="#" id="logout"><i class='fas fa-door-open'></i> Cerrar
+            Sesión</a>
         </div>
       </div>
     </div>
@@ -46,27 +66,42 @@
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h3>Regístrate</h3>
+          <h3 class="titulore">Regístrate</h3>
           <button type="button" class="btn-close btn-close-dark" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body p-5">
           <div class="container-inputs">
-            <form id="signup-form">
-              <label class="sub" for="fecha" id="apodoubi">Apodo:</label>
-              <center><input type="text" placeholder="Escriba su apodo" class="input-login" id="signup-names"
-                  autocomplete="off"></center>
+            <form id="signup-form" autocomplete="off">
+              <label class="sub" for="apodo" id="apodoubi">Apodo:</label>
+              <br>
+              <center><input type="name" placeholder="Escriba un apodo" class="input-login" id="signup-names"
+                  autocomplete="off">
+              </center>
+              <br>
               <label class="sub" for="fecha" id="fechaubi">Fecha de nacimiento:</label>
-              <center><input class="caja" type="date" name="fecha" id="fecha"></center>
+              <br>
+              <center><input class="caja" type="date" name="fecha" id="fecha">
+              </center>
+              <br>
               <label class="sub" for="edad" id="cinco">Seleccione su edad:</label>
+              <br>
               <center><input class="caja" type="number" name="edad" id="edad" placeholder="1">
               </center>
+              <br>
               <label class="sub" for="correo" id="correoubi">Correo:</label>
-              <center><input type="email" placeholder="Correo" class="input-login" id="signup-email" autocomplete="off">
+              <br>
+              <center><input type="email" class="caja" placeholder="Correo" id="signup-email" placeholder="Correo">
               </center>
-              <label class="sub" for="contraseña" id="contraseñaubi">Contraseña:</label>
-              <center><input type="password" placeholder="Contraseña" class="input-login" id="signup-password"></center>
-              <label class="sub" for="genero" id="generoubi" ; Género>Seleccione su Género</label>
+              <br>
+              <label class="sub" for="contraseña" class="caja" id="contraseñaubi">Contraseña:</label>
+              <br>
+              <center><input type="password" placeholder="Contraseña" id="signup-password" placeholder="contraseña">
+              </center>
+              <br>
+              <label class="sub" for="genero" id="generoubi" ; Género>Seleccione su Género:</label>
+              <br>
               <center>
+                <br>
                 <div class="opciones">
                   <input type="radio" id="f" name="genero" value="Femenino">
                   <label for="f">Femenino</label>
@@ -80,24 +115,36 @@
                   <label for="o">Otro</label>
                 </div>
               </center>
+              <br>
               <div class="terms">
                 <input type="checkbox" id="termConditions" class="termConditions" />
-                <label for="termConditions">Acepto los <a href="assets/doc/terms-and-conditions.pdf"
-                    target="_blank">Términos, Condiciones y Política de Privacidad.</a></label>
+                <label for="termConditions">Acepto los <a href="assets/doc/TÉRMINOS Y CONDICIONES.pdf"
+                    target="_blank">Términos,
+                    Condiciones y Política de Privacidad.</a></label>
               </div>
-              <button type="submit" class="sign-up" id="btnSignUp">Registrarse</button>
+              <br>
+  <button type="submit" class="sign-up" id="btnSignUp" onmousedown="sonido.play()">Registrarse</button>
             </form>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
           </div>
+
           <span class="alertLogInSignUp" id="alertLogInSignUp"></span>
-          <div class="register">
-            <p>¿Ya tienes una cuenta?<a id="InicioSesion" href='#/login'>Inicia Sesión</a></p>
+          <div class="inicia">
+            <p id="InicioSesion">¿Ya tienes una cuenta?<a href='#/login'>IniciaSesión</a></p>
             </section>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <!--Iniciar Sesión-->
+
+  <!--INICIAR SESIÓN-->
   <div class="modal fade" id="signinModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalSignin"
     aria-hidden="true">
     <div class="modal-dialog">
@@ -109,26 +156,30 @@
         <div class="modal-body">
           <div class="container-inputs">
             <form id="login-form">
-              <input type="email" placeholder="Correo" class="input-login" id="email">
-              <input type="password" placeholder="Contraseña" class="input-login" id="password">
-              <button type="submit" class="log-in" id="btnLogIn">Iniciar Sesión</button>
+              <center> <input type="email" placeholder="Correo" class="input-login" id="email">
+                <input type="password" placeholder="Contraseña" class="input-login" id="password">
+              </center>
+       <button type="submit" class="log-in" id="btnLogIn" onmousedown="sonido.play()">LOGIN</button>
             </form>
-            <p>O bien ingresa con...</p>
+            <p class="ingresa">O bien ingresa con:</p>
             <div class="rrss">
               <img src="assets/img/facebook (1).png" alt="Ícono Facebook" id="btnFacebook" width="30px" height="30px">
               <img src="assets/img/google.png" alt="Ícono google" id="btnGoogle" width="30px" height="30px">
-              <p>Si eres programador y quisieras contar alguna complicación con tu código, también puedes con: </p>
+              <p>Si eres programador y quisieras contar alguna complicación con tu código, también puedes con:
+              </p>
               <img src="assets/img/github.png" alt="Ícono de Github" id="btngithub" width="30px" height="30px">
             </div>
           </div>
-          <span class="alertLogInSignUp" id="alertLogInSignUp"></span>
-          <div class="register">
-            <p>¿No tienes una cuenta?<a id="Registrar" href="#/signup">Regístrate</a></p>
-          </div>
-          </section>
         </div>
       </div>
+      <span class="alertLogInSignUp" id="alertLogInSignUp"></span>
+      <div class="register">
+        <p>¿No tienes una cuenta?<a id="Registrar" href="#/signup">Regístrate</a></p>
+      </div>
+      </section>
     </div>
+  </div>
+  </div>
   </div>
 
   <!--La tarjeta o donde pongan lo que deseen publicar, Escondido-->
@@ -137,29 +188,25 @@
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h3>¡Chismea!</h3>
+          <h3 class="titulocard">Comenta &#128515;</h3>
           <button type="button" class="btn-close btn-close-dark" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div class="modal-body">
-          <div class="container p-4">
-            <div class="row">
-              <div class="col-md-6 offset-md-3">
-                <div class="card">
-                  <div class="card-body">
-                    <!--<h1 class="h4">Agregar tarea o nota</h1>-->
-                    <form id="task-form">
-                      <label for="title">Título:</label>
-                      <input type="text" id="task-title" class="form-control mb-3" class="My First Title"
-                        placeholder="Escribir título" autofocus>
-                      <<label for="description">:</label>
-                        <textarea id="task-description" rows="3" class="form-control mb-3"
-                          placeholder="Cuéntanos tu secreto :^)"></textarea>
-                        <button class="btn btn-primary" id="btn-task-form">Guardar</button>
-                    </form>
-                  </div>
-                </div>
-              </div>
+        <div class="modal-bodyy">
+          <div class="container-card">
+            <div class="card">
+              <form>
+                <label>Titulo:</label>
+                <input type="text">
+
+                <label>Cuentanos tu secreto:</label>
+                <textarea id="msg" name="user_message">                              </textarea>
+                <br>
+                <button class="boton-card">Publicar</button>
+                <button class="boton-card">Editar</button>
+              </form>
             </div>
+
+
           </div>
           <div class="container p-4">
             <div class="row">
@@ -175,81 +222,116 @@
   </div>
 
 
-  <!--Fondos-->
-  <div class="accordion" id="accordionExample">
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="headingOne">
-        <button class="accordion-button" id="fon" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-          aria-expanded="true" aria-controls="collapseOne">
-          Fondos ✨
-        </button>
-      </h2>
-      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-        data-bs-parent="#accordionExample">
-        <div class="accordion-body">
-          <div>
-            <button id="diseño1">Galáctico</button>
-            <button id="diseño2">Paisaje</button>
-            <button id="diseño3">Ocaso</button>
-            <button id="diseño4">Amanecer</button>
-            <button id="diseño5">Intriga</button>
-            <button id="diseño6">Noche</button>
-            <button id="diseño7">Tranquilidad</button>
+
+  <!--El menú que aparecerá ua vez se haya ingresado-->
+
+  <button class="btn" itype="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+    aria-controls="offcanvasRight"><i class="fa fa-reorder" style="font-size:25px"></i></button>
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasRightLabel">Menu</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <!--Fondos-->
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" id="botonfon" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Fondos ✨
+            </button>
+          </h2>
+
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <div class="fila1">
+                <p class="notafondo">En caso los colores no se coloquen una vez ya hayas apretado un fondo, puedes
+                  volver a recargar la página y
+                  volver a seleccionarlo ;^)</p>
+                <button id="diseño1">Galáctico</button>
+                <button id="diseño2">Paisaje</button>
+                <button id="diseño3">Ocaso</button>
+                <button id="diseño4">Amanecer</button>
+                <button id="diseño5">Intriga</button>
+                <button id="diseño6">Noche</button>
+                <button id="diseño7">Tranquilidad</button>
+              </div>
+              <div class="fila2">
+                <button id="diseño1">Galáctico</button>
+                <button id="diseño2">Paisaje</button>
+                <button id="diseño3">Ocaso</button>
+                <button id="diseño4">Amanecer</button>
+                <button id="diseño5">Intriga</button>
+                <button id="diseño6">Noche</button>
+                <button id="diseño7">Tranquilidad</button>
+              </div>
+              <!--Ahora haré el código para los colores que deseen de fondo, sólidos -->
+              <form class="solid">
+                <select id="myselection" name="backgroundchanger" onchange="colorchanger()">
+                  <option id="color1" value="#BAC8CE">
+                  <option id="color2" value="#C9D4D9">
+                  <option id="color3" value="#E7ECEE">
+                  <option id="color4" value="#FFEEEE">
+                  <option id="color5" value="#DFCFC8">
+                  <option id="color6" value="#E8DDD8">
+                  <option id="color7" value="#F2EAE6">
+                  <option id="color8" value="#F2EFEA">
+                </select>
+              </form>
+              <iframe id="inlineFrameExample" title="Inline Frame Example" width="300" height="200"
+                src="https://www.openstreetmap.org/export/embed.html?bbox=-0.004017949104309083%2C51.47612752641776%2C0.00030577182769775396%2C51.478569861898606&layer=mapnik">
+              </iframe>
+            </div>
           </div>
-          <div class="fila2">
-            <button id="diseño1">Galáctico</button>
-            <button id="diseño2">Paisaje</button>
-            <button id="diseño3">Ocaso</button>
-            <button id="diseño4">Amanecer</button>
-            <button id="diseño5">Intriga</button>
-            <button id="diseño6">Noche</button>
-            <button id="diseño7">Tranquilidad</button>
-          </div>
-          <!--Ahora haré el código para los colores que deseen de fondo, sólidos -->
-          <form>
-            <select id="myselection" name="backgroundchanger" onchange="colorchanger()">
-              <option id="color1" value="#BAC8CE">
-              <option id="color2" value="#C9D4D9">
-              <option id="color3" value="#E7ECEE">
-              <option id="color4" value="#FFEEEE">
-              <option id="color5" value="#DFCFC8">
-              <option id="color6" value="#E8DDD8">
-              <option id="color7" value="#F2EAE6">
-              <option id="color8" value="#F2EFEA">
-            </select>
-          </form>
         </div>
       </div>
     </div>
   </div>
   </div>
-  <!--El menú que aparecerá ua vez se haya ingresado-->
-
-  <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
-    aria-controls="offcanvasRight">Menu</button>
-  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-    <div class="offcanvas-header">
-      <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
-      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-    </div>
-    <div class="offcanvas-body">
-      ...
-    </div>
-  </div>
 
 
   <!--Esto podría ser lo que aparezca en el fondo, antes de iniciar sesión-->
-  <h1>Hola</h1>
-  <p>esto es una prueba</p>
-  <script type="module" src="assets/js/principal.js"></script>
-  <script type="module" src="assets/js/firebase.js"></script>
-  <script type="module" src="assets/js/registro.js"></script>
-  <script type="module" src="assets/js/sesion.js"></script>
-  <script type="module" src="assets/js/toast.js"></script>
+
+  <h1 class="tituloprincipal">Dime tu secreto!</h1>
+  <img class="silencio" src="assets/img/imagenprincipal.png" width="230" height="300">
+  <p class="descripcion">Bienvenido@, en está página encontrarás anécdotas de personas igual de geniales que tú, también
+    dondé te divertirás hasta más no parar </p>
+
+  <script src="assets/auth/fondos.js"></script>
+  <br>
+  <script src="https://kit.fontawesome.com/02ea262c11.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/7e57db430e.js" crossorigin="anonymous"></script>
+  <br>
+  <script src="https://cdn.jsdelivr.net/mojs/latest/mo.min.js"></script>
+  <div></div>
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+    integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+  <script type="module" src="main.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
     crossorigin="anonymous"></script>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  <script src="main.js" type="module"></script>
+  <script src="assets/js/script.js"></script>
+  <script src="assets/auth/googleLogin.js" type="module"></script>
 </body>
+  <script src="assets/auth/audio.js"></script>
+<footer class="footer">
+  <img id="iicon" src="assets/img/logo-equipo.png" alt="logo-maryleewoods" width="230" height="100">
+  <img id="sobre" src="assets/img/sobre.png" width="50" height="40">
+  <h4 class="correolee">@maryleewoods04g11</h4>
+  <div class="primerasredes">
+    <h2 class="redess">Redes Sociales</h2>
+    <img id="facebook" src="assets/img/faceboook.png" width="30" height="27">
+    <p> Mary Lee Woods</p></a>
+    <img id="instagram" src="assets/img/instagram.png" width="30" height="27">
+    <p> Mary Lee Woods04G1</p>
+    <img id="twitter" src="assets/img/gorjeo.png" width="30" height="27">
+    <p> maryleewoods04g1</p>
+  </div>
+  <p class="copyright">Copyright 2023©</p>
+</footer>
 
 </html>
